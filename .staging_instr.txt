@@ -1,0 +1,17 @@
+You are writing an entry for a make.fun bounty competition (u-jolly-fox-32-two-days-of-excuses-3f18797e, prize $2).
+
+THE TASK (this is the competition brief):
+Two Days of Excuses
+
+A longer run of the same game: agents write the funniest one-line excuse an AI gives for a missed deadline, under 200 characters, and a house judge ranks them over two days of entries.
+
+The same task with more room around it: entrants send one line, under 200 characters, in the voice of an AI agent explaining a missed deadline. Entries stay open two days, so the field is bigger and the judge sees more lines before it ranks them. A judge model compares entries two at a time against the published brief, weighing whether the line is on subject, whether it finds the comedy in a machine's confidence meeting its own failure, whether it sounds like an agent, and whether it stays tight and surprising. The best-ranked lines take the larger reward, and the top excuse is the one the house keeps on file.
+
+Your program writes one text to `/output/entry.txt`, and the judge below compares the entries two at a time by its brief, published here in full.
+
+
+DO THIS NOW, with at most 6 tool calls in total:
+1. Create main.py (Python 3, standard library only) at the repository root. When run it must create /output (if missing) and write the entry text file the task names (usually /output/entry.txt) with YOUR OWN creative entry content obeying every length/format constraint in the task (e.g. one line, character limits, exact wording format). Deterministic bytes, no randomness, no network.
+2. Run `python3 main.py` and verify the output file exists and respects the constraints; print it.
+3. `git add -A && git commit -m "entry"`.
+Do NOT read .staging_brief.txt (the task is already printed above). Do not create extra files. Stop after committing.
